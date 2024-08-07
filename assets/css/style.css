@@ -1,0 +1,66 @@
+.bg-red {
+    background: #C74B40;
+}
+
+.bg-red .navbar-nav .nav-link.active {
+    color: #FFFFFF;
+}
+
+.nav-link {
+    color: #ffffffb2;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #FFFFFF;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.nav-item .btn {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.text-white-200 {
+    color: #ffffffb2;
+}
+
+.top-min-65 {
+    top: -65px!important;
+}
+
+.mt-200 {
+    margin-top: 200px;
+}
+
+.bg-icon-red {
+    color: #FA2C5A;
+}
+
+.p-testimoni {
+    padding: 20px 20px;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.li-style-none {
+    list-style-type: none;
+}
+
+img .cover-login-img {
+    position: absolute;
+    height: 100vh;
+    z-index: 1;
+}
+
+.font-poppin {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <section id="login">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 p-0">
+            <img
+              src="assets/img/bg-toyota.png"
+              alt="Yaris cross"
+              style="height: 100vh; position: absolute; z-index: -1"
+            />
+            <div
+              class="d-flex justify-content-center align-items-end"
+              style="height: 100vh"
+            >
+              <h1
+                class="text-light m-0 text-end font-poppin"
+                style="width: 300px"
+              >
+                TMMIN <br />CAR RENTAL
+              </h1>
+            </div>
+          </div>
+          <div class="col-6 p-0">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              style="height: 100vh; width: 100%"
+            >
+              <form style="width: 400px">
+                <h4>Daftar</h4>
+                <div class="mb-3">
+                  <label for="form-email" class="form-label">Nama</label>
+                  <input
+                    type="email"
+                    class="form-control rounded-pill p-3"
+                    id="form-email"
+                    placeholder="Nama Lengkap"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="form-email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control rounded-pill p-3"
+                    id="form-email"
+                    placeholder="contoh: example@mail.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control rounded-pill p-3"
+                    id="exampleInputPassword1"
+                    placeholder="masukan password"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="btn rounded-pill w-100 text-light"
+                  style="background: #489b4b"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/getCars.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

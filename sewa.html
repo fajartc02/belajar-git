@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-red">
+      <div class="container">
+        <a class="navbar-brand" href="./scraping.html">
+          <img src="assets/img/logo-tmmin.png" alt="Logo Tmmin" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Our Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-success" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner/hero/jumbotron -->
+    <section id="hero" class="bg-red">
+      <div class="container">
+        <div class="row">
+          <div class="col-7 d-flex align-items-center">
+            <div>
+              <h1 class="text-light">
+                Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+              </h1>
+              <p class="text-white-200">
+                Selamat datang di Binar Car Rental. Kami menyediakan mobil
+                kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+                kebutuhanmu untuk sewa mobil selama 24 jam.
+              </p>
+            </div>
+          </div>
+          <div class="col-5">
+            <img
+              class="img-fluid"
+              src="assets/img/zenix.png"
+              alt="Innova Zenix"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="search" style="margin-top: -40px">
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <form class="row g-3 justify-content-evenly align-items-end">
+              <div class="col-3">
+                <label class="form-label">Tipe Sopir</label>
+                <select id="driver-type" class="form-select custom-select">
+                  <option
+                    class="form-select option-bg-success"
+                    disabled
+                    selected
+                  >
+                    Pilih Tipe Driver
+                  </option>
+                  <option
+                    class="form-select option-bg-success"
+                    value="Dengan Supir"
+                  >
+                    Dengan Supir
+                  </option>
+                  <option
+                    class="form-select option-bg-success"
+                    value="Lepas Kunci"
+                  >
+                    Tanpa Supir (Lepas Kunci)
+                  </option>
+                </select>
+              </div>
+              <div class="col-3">
+                <label class="form-label">Tanggal</label>
+                <input
+                  id="reservation-date"
+                  class="form-control"
+                  type="date"
+                  placeholder="Pilih Tanggal"
+                />
+              </div>
+              <div class="col-2">
+                <label class="form-label">Waktu Jemput/Ambil</label>
+                <input
+                  id="reservation-time"
+                  class="form-control"
+                  type="time"
+                  placeholder="Pilih Waktu"
+                />
+              </div>
+              <div class="col-2">
+                <label class="form-label">Jumlah Penumpang</label>
+                <input
+                  id="reservation-passenger"
+                  class="form-control"
+                  type="number"
+                  min="1"
+                  max="7"
+                  placeholder="Jumlah Penumpang"
+                />
+              </div>
+              <div class="col-auto">
+                <button id="btn-search" type="submit" class="btn btn-success">
+                  Cari Mobil
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="result">
+      <div class="container mt-3">
+        <div class="row" id="car-result"></div>
+      </div>
+    </section>
+
+    <footer id="footer" class="mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+            <p>binarcarrental@gmail.com</p>
+            <p>081-233-334-808</p>
+          </div>
+          <div class="col-12 col-lg-3">
+            <ul>
+              <li class="li-style-none">Our Services</li>
+              <li class="li-style-none">Why Us</li>
+              <li class="li-style-none">Testimonial</li>
+              <li class="li-style-none">FAQ</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-2">
+            <p>Connect with us</p>
+            <div class="d-flex justify-content-between mt-3">
+              <img src="assets/img/icon_facebook.png" alt="Facebook" />
+              <img src="assets/img/icon_instagram.png" alt="Instagram" />
+              <img src="assets/img/icon_twitter.png" alt="Instagram" />
+              <img src="assets/img/icon_mail.png" alt="Mail" />
+              <img src="assets/img/icon_twitch.png" alt="Twitch" />
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 text-end mt-2">
+            <p>Copyright Binar 2022</p>
+            <p>All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/getCars.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
